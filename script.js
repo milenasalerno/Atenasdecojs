@@ -164,7 +164,7 @@ $("#comprar").on("click", function () {
     });
   } else Swal.fire("Gracias por su compra", "El pedido se realizo correctamente!", "success");
 
-  carrito = {};
+  carrito = [];
   renderCarrito()
 });
 
