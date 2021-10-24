@@ -1,0 +1,561 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body{
+    background-color: #110f0fea;
+  }
+  header, .alert{
+    z-index: 100;
+  }
+
+  .logoAtenas {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  
+  .logoAtenas header h1 {
+    font-size: 50px;
+  }
+  
+  .logoAtenas header a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #eec0c6;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .logoAtenas header a:hover {
+    color: black;
+    transform: scale(1.1, 1.1);
+    text-decoration: none;
+  }
+  
+  /*SLIDE */
+  .slide {
+    width: 100%;
+  }
+  
+  .productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 55px;
+    margin-left: 12%;
+    margin-bottom: 55px;
+  }
+  .productos img {
+
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 5px 0 10px black;
+  }
+  
+  .productos img:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .imagenes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 15px;
+  }
+  
+  .imagenes img {
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 25px;
+    border-radius: 5px;
+  }
+  
+  .imagenes img:hover {
+    transform: scale(1.1, 1.1);
+    opacity: .7;
+    border: solid 2px gray;
+  }
+  
+  .form1 {
+    background-color: white;
+    font-family: 'Nunito', sans-serif;
+    width: 900px;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 60px auto;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid grey;
+    box-shadow: 5px 10px 10px black;
+  }
+  
+  .form1 .titulo {
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  
+  .form1 .titulo h2 {
+    font-size: 30px;
+    color: gray;
+  }
+  
+  .form2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+  }
+  
+  .form2 .contenido {
+    padding: 20px;
+    margin: 30px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .form2 .contenido p {
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .formulario {
+    margin: 30px;
+    padding: 10px;
+  }
+  
+  .formulario input {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: #c9bfbf;
+    border-radius: 15px;
+    border-bottom: 1px solid #eec0c6;
+    margin: 5px;
+  }
+  
+  .formulario label {
+    text-align: center;
+    font-size: 15px;
+    display: block;
+  }
+  
+  .formulario .textarea input {
+    height: 100px;
+    width: 300px;
+  }
+
+  .errores{
+    -webkit-boxshadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background: red;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    display: none;
+    font-size: 14px;
+    margin-top: -50px;
+    margin-left: 180px;
+    padding: 10px;
+    position: absolute;
+}
+  
+  .contenedor {
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px;
+    background-image: url(../imagenes/22.jpeg);
+    background-size: cover;
+    position: relative;
+  }
+  
+  .contenedor h3 {
+    color: white;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 150px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+  }
+  
+  /* DISPOSITIVOS MOVILES */
+  @media (min-width: 360px) and (max-width: 480px) {
+    .macetaCeramica img {
+      height: 100%;
+    }
+    .productos {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 10px;
+    }
+    .productos img {
+      width: 120px;
+      height: 120px;
+      margin: 20px;
+    }
+    .form1 {
+      width: 80%;
+    }
+    .form1 .form2 {
+      margin-right: 40px;
+    }
+    .form1 .form2 .formulario input {
+      width: 160px;
+      text-align: center;
+      align-items: center;
+    }
+    .informacion1 {
+      display: flex;
+    }
+    .informacion1 .envios {
+      margin: 5px;
+    }
+    .informacion1 .envios h3 {
+      font-size: 10px;
+      margin: 10px;
+    }
+    .informacion1 .envios p {
+      font-size: 14px;
+      margin: 10px;
+    }
+    .informacion1 .envios ul {
+      list-style: none;
+    }
+    .informacion1 .envios ul li {
+      font-size: 12px;
+      margin-left: 10px;
+    }
+    .informacion1 .celular h3 {
+      font-size: 10px;
+      margin-left: 10px;
+    }
+    .informacion1 .celular p {
+      font-size: 14px;
+      margin-left: 10px;
+    }
+    .informacion1 .celular ul {
+      list-style: none;
+    }
+    .informacion1 .celular ul li {
+      margin-left: 20px;
+    }
+    .informacion1 .celular ul a {
+      font-size: 12px;
+      text-decoration: none;
+      color: black;
+    }
+    .carousel-inner img {
+      width: 100%;
+      height: 100%;
+    }
+    footer {
+      width: 100%;
+    }
+    footer .redes {
+      padding-right: 10px;
+    }
+    footer .redes .mediosdepago {
+      padding-left: 80px;
+    }
+    footer .redes .mediosdepago img {
+      width: 10px;
+      height: 10px;
+    }
+    .contenedor h3 {
+      font-size: 20px;
+    }
+  }
+  
+  /* 
+  TABLETS, IPADS 
+  */
+  @media only screen and (min-width: 768px) {
+    body {
+      background-color: black;
+    }
+    footer {
+      width: 100%;
+    }
+  }
+  
+  /*
+   COMPUTADORAS DE ESCRITORIO, NETBOOKS
+  */
+  @media only screen and (min-width: 1024px) {
+    body {
+      background-color: blanchedalmond;
+    }
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: white;
+    transition: .3s ease all;
+  }
+  
+  body.dark {
+    background: #000;
+  }
+  
+  body.dark {
+    background-color: #000;
+  }
+  
+  .carousel-inner img {
+    width: 100%;
+  }
+  
+  .informacion1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    width: 100%;
+    height: 200px;
+    background-color: #eec0c6;
+  }
+  
+  .informacion1 .envios {
+    margin: 30px;
+    font-size: 15px;
+  }
+  
+  .informacion1 .envios h3 {
+    font-size: 16px;
+  }
+  
+  .informacion1 .envios ul {
+    list-style: none;
+  }
+  
+  .informacion1 .envios ul i {
+    font-size: 30px;
+    margin-left: 50px;
+  }
+  
+  .informacion1 .celular {
+    margin: 30px;
+    font-size: 15px;
+    margin-left: 40px;
+  }
+  
+  .informacion1 .celular h3 {
+    font-size: 16px;
+    margin-left: 40px;
+  }
+  
+  .informacion1 .celular p {
+    margin-left: 40px;
+  }
+  
+  .informacion1 .celular ul {
+    list-style: none;
+  }
+  
+  .informacion1 .celular ul a {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    margin-left: 90px;
+  }
+  
+  footer {
+    background-color: black;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+  }
+  
+  footer h4 {
+    font-size: 18px;
+    margin-left: 40px;
+    padding-top: 50px;
+  }
+  
+  footer ul {
+    list-style: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+    color: #fff;
+  }
+  
+  footer ul li {
+    margin: 0 .75rem;
+  }
+  
+  footer ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer ul li a:hover {
+    text-decoration: none;
+    color: #eec0c6;
+  }
+  
+  .index {
+    padding-top: 30px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  
+/* CARRITO*/
+.jazz {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 60px;
+    grid-row-gap: 60px;
+}
+.card img{
+    width: 300px;
+    height: 300px;
+    
+}
+.productos {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.botonForm-toggle {
+  width: 100px;
+  height: 80px;
+  font-size: 18px;
+  background-color: #333;
+  color: #fff;
+}
+
+#texto {
+ font-size: 20px;
+ width: 50%;
+ background-color: #eec0c6;
+ text-align: center;
+}
+
+#finalizar-compra a {
+text-decoration: none;
+}
+
+#bEnviar{
+  color: black;
+}
+
+.card{
+  border: none;
+  width: 100%;
+}
+
+.jazz {
+  text-align: center;
+  display: flex;
+}
+
+.jazz{
+  display: block;
+  border: none;
+}
+
+
+.carritoPng {
+  width: 50px;
+  height: 40px;
+}
+
+#conocenos {
+  background-color: #000;
+  width: 200px;
+  height: 200px;
+}
+  .description{
+    height: 25px;
+    overflow: hidden;
+    transition: height .3s ease-in .3s;
+  }
+  .description:hover{
+    height: 80px;
+  }
+  .carrito{
+    min-height: 80vh;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .table__productos{
+    display: flex;
+  }
+  .table__productos > img{
+    width: 9rem;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-right: 20px;
+  }
+  .table__cantidad > input{
+    width: 40px;
+    border: none;
+    outline: 0;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 30px;
+    margin-bottom: 20px;
+  }
+  .hide, .remove{
+    display: none;
+  }
+
+
+  .qs {
+    width: 100px;
+    height: 50px;
+  }
+
+.info p{
+  color: white;
+  font-size: 25px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 150px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 70%;
+}
+
+#infoEnviada{
+font-family: 'Nunito', sans-serif;
+color: green;
+padding-left: 30px;
+padding-top: 20px;}
+
+.textp {
+  color: red;
+}
